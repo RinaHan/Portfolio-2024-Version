@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 function Home() {
   return (
     <Container>
-      <Navbar/>
+      {/* <Navbar/> */}
       <HomeMain />
       <Cards />
       <Footer /> 

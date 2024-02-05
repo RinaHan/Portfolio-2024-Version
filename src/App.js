@@ -24,8 +24,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path='volunteers' element={<Volunteers />} />
           <Route path='walk' element={<Walk />} />
-          {/* <Route path='greenLife' element={<GreenLife />} /> */}
-          {/* <Route path='Linkt' element={<Linkt />} /> */}
+          <Route path='greenLife' element={<GreenLife />} />
+          <Route path='Linkt' element={<Linkt />} />
         </Route>
       </Routes>
     </div>

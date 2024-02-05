@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectMain {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+  }
+  
+  .projectImgCont {
+    flex: 1.3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    /* background-color: blue; */
+  }
+  
+  .projectImgCont > img {
+    width: 70%;
+  }
+  
+  .projectInfoCont {
+    /* background-color: pink; */
+    flex: 1;
+    padding: 30px 50px 30px 0;
+    width: 70%;
+  }
+  
+  .projectDetail {
+    flex: 1;
+    padding: 0 0 0 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  #info {
+    font-weight: bold;
+  }
+  
+  .projectDetail > li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  #projectTool {
+    font-weight: bold;
+    /* font-size: 1rem; */
+  }
+  
+  .demoCont {
+    width: 100%;
+    padding: 50px 0 100px;
+    /* height: 300px; */
+    background-color: rgb(227, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .demoText {
+    font-size: 2rem;
+    padding: 0 0 50px;
+  }
+  
+  video {
+    object-fit: contain;
+    width: 70%;
+    max-height: 700px;
+  }
+  
+  .codeCont {
+    width: 100%;
+    padding: 50px 0 100px;
+    /* height: 300px; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutImgCont {
+    flex: 1.3;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    /* background-color: blue; */
+  }
+  
+  .aboutImgCont > img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .demoRecord video {
+    width: 100%;
+    background-color: red;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .btn {
+      width: 120px;
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .projectMain {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .projectImgCont > img {
+      padding: 20px 0 0;
+    }
+  
+    .projectDetail > li {
+      font-size: 12px;
+    }
+  
+    .projectInfoCont {
+      width: 80%;
+    }
+  
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    .info {
+      font-size: 16px;
+    }
+  
+    .btn {
+      width: 130px;
+      font-size: 15px;
+    }
+    video {
+      object-fit: contain;
+      width: 80%;
+      /* max-height: 700px; */
+    }
+    .aboutImgCont > img {
+      width: 200%;
+    }
+  }
+  

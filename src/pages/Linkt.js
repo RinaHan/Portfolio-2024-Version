@@ -25,7 +25,6 @@ function Linkt() {
         projectSrc3='images/linkt4.png'
         // projectDemo={<video src='/images/linkt2 record.mp4' autoPlay loop muted />}
       />
-      <Footer />
     </div>
   );
 }

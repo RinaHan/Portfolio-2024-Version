@@ -11,7 +11,6 @@ function Home() {
       {/* <Navbar/> */}
       <HomeMain />
       <Cards />
-      <Footer /> 
     </Container>
   );
 }

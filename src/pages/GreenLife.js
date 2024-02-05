@@ -24,7 +24,6 @@ function GreenLife() {
         projectSrc2='images/green2.png'
         // projectSrc3="images/linkt4.png"
       />
-      <Footer />
     </div>
   );
 }

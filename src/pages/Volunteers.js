@@ -29,7 +29,6 @@ function Volunteers(props) {
         projectSrc2='images/volun2.png'
         projectSrc3='images/volun3.png'
       />
-      <Footer />
       {/* </div> */}
     </div>
   );

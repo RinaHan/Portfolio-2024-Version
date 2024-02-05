@@ -7,12 +7,14 @@ import Walk from "./pages/Walk";
 import GreenLife from "./pages/GreenLife";
 import Linkt from "./pages/Linkt";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
     <div>
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };

@@ -26,7 +26,6 @@ function Walk() {
           projectSrc3='images/walk3.png'
           // demo={<video src='/videos/walk.mp4' autoPlay loop muted />}
         />
-      <Footer />
     </div>
   );
 }

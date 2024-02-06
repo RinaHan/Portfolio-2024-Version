@@ -3,7 +3,7 @@ import styled from "styled-components";
 import HomeMain from "../components/HomeMain";
 import Footer from "../components/Footer";
 import Cards from "../components/Cards";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header";
 
 function Home() {
   return (

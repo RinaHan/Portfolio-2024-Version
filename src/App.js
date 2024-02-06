@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -6,13 +5,13 @@ import Volunteers from "./pages/Volunteers";
 import Walk from "./pages/Walk";
 import GreenLife from "./pages/GreenLife";
 import Linkt from "./pages/Linkt";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const Layout = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Outlet />
       <Footer />
     </div>

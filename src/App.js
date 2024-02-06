@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage";
 import Volunteers from "./pages/Volunteers";
 import Walk from "./pages/Walk";
 import GreenLife from "./pages/GreenLife";

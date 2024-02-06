@@ -22,8 +22,8 @@ function Header() {
   };
 
   const showButton = () => {
-    if (window.innerWidth <= 560) {
-      // if (window.innerWidth <= 960) {
+    // if (window.innerWidth <= 560) {
+      if (window.innerWidth <= 768) {
       setButton(false);
     } else {
       setButton(true);
@@ -39,10 +39,11 @@ function Header() {
   return (
     <div className='nav-container'>
       <Link to='/' className='logo' onClick={closeMobileMenu}>
-        rinahan.ca 
+        rinahan.ca
         {/* <i class='fab fa-typo3' /> */}
       </Link>
       <div className={hamburgerClick ? "menus active" : "menus"}>
+        <span>ACADEMIC PROJECTS</span>
         <Link className='menu' to='/volunteers' onClick={closeMobileMenu}>
           Volunteers
         </Link>

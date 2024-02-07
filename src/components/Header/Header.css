@@ -9,48 +9,68 @@
   position: fixed;
   top: 0;
   z-index: 999;
+  /* border-top: 2mm ridge rgba(173, 93, 130, 0.6); */
+
 }
 .logo {
   font-size: 1.5rem;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+.logo:hover {
+  box-shadow: 10px 9px 8px -2px rgba(0, 0, 0, 0.47);
+  border: 1px solid rgba(177, 177, 177, 0.316);
+  background-color: rgba(177, 177, 177, 0.316);
 }
 .menus {
   font-size: 1.1rem;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 30px;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 75vw;
   justify-content: end;
-  margin-top:20px;
+  margin-top: 20px;
   /* background-color: blue; */
 }
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90px;
+  padding:0 7px;
+  /* background-color: red; */
+  /* color:red; */
+}
+.menu:hover {
+  font-size: 1.17rem;
+  transition: all 0.5s ease;
+  border-bottom:2px solid #fff;
+  /* transition: 0.3s ease-out; */
+
+  /* color: #fc5f5f; */
 }
 .hamburger-icon {
-  display: fixed;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 60%);
-  font-size: 1.8rem;
+  position: fixed;
+  right: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
-}
-.fa-bars {
   color: #fff;
 }
-
-@media screen and (max-width: 560px) {
-  /* @media screen and (max-width: 960px) { */
+.academic {
+  display: none;
+}
+@media screen and (max-width: 768px) {
   .menus {
     display: flex;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -67,19 +87,16 @@
   }
   .menu {
     height: 50px;
+    width: 100%;
   }
   .menu:hover {
-    height: 48px;
+    height: 49px;
     background-color: #999d;
     border-radius: 0;
     border-bottom: 2px solid #fff;
     transition: all 0.2s ease-out;
   }
-  .logo {
-    transform: translate(25%, 50%);
-  }
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
+  .academic {
+    display: inline;
   }
 }

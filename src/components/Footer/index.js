@@ -1,11 +1,14 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import styled from "styled-components";
 
 function Footer(props) {
   return (
     <Container>
+      <Image className='h-intro-bg'></Image>
       <Items>
         <h2>Contact Me</h2>
+        {/* <p>If you are interested in my work or want to work with me, please feel free to contact me.</p> */}
         <Item href='https://www.linkedin.com/in/rina-han/' target='_blank'>
           <span>LinkedIn</span> <Icon className='footer-icon' src='icons/linkedin.png' alt='icon' />
         </Item>
@@ -22,8 +25,16 @@ function Footer(props) {
 
 export default Footer;
 
+const Image = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-image: url("/images/sky.jpg");
+  z-index: -1;
+`;
 const Container = styled.div`
-  background-color: rgb(243, 210, 215);
+  /* background-color: rgb(243, 210, 215); */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -31,6 +42,12 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 80px;
+  /* border-bottom: 2mm solid rgba(173, 93, 130, 0.6); */
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 const Items = styled.div`
   background-color: #fff;
@@ -42,6 +59,12 @@ const Items = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 0 20px;
+  box-shadow: 10px 9px 8px -2px rgba(0, 0, 0, 0.47);
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 const Item = styled.a`
   color: #242424;
@@ -57,9 +80,15 @@ const Item = styled.a`
     transition: 0.3s ease-out;
     font-size: 16.5px;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 const Icon = styled.img`
   width: 20px;
   height: auto;
   margin-left: 10px;
+  /* & :hover {
+    transform: scale(1.05);
+  } */
 `;

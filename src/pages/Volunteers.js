@@ -3,22 +3,22 @@ import React from "react";
 // import { Button } from "../Button/Button";
 // import "./Project";
 // import { Link } from "react-router-dom";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import ProjectDesc from "../components/ProjectDesc";
 
 function Volunteers(props) {
   return (
     <div className='container'>
       {/* <div className='project'> */}
-      <Project
+      <ProjectDesc
         src='images/tablet1.png'
         title='Volunteers'
+        subtitle='Academic 2020'
         sort='Web App'
         sortIcon={<i className='fas fa-desktop' />}
         exp1='Developed volunteer’s web app'
         exp2='Created a secure login system to prevent SQL injection using sessions'
         exp3='Allowed logged-in users to manage stored data, and visually showed it'
-        exp4=''
+        // exp4='User testing completed'
         tool1='PHP'
         toolIcon1={<i className='fab fa-php'></i>}
         tool2='MySQL'

@@ -1,59 +1,22 @@
 import React from "react";
-import CardItem from "./CardItem";
+import { Link } from "react-router-dom";
 import "./Cards.css";
 
-function Cards() {
+function Cards(props) {
   return (
-    <div className="cards">
-      <div className="projectTitle">
-        <div className="aboutTitle">Projects</div>
+    <Link className='cards-cont' to={props.path}>
+      <figure className='cards-img-wrap' data-category={props.label}>
+        <img className='cards-img' src={props.src} alt='Travel' />
+      </figure>
+
+      <div className='cards-title-wrap'>
+        <div className='cards-title'>{props.title}</div>
+        <img className='cards-icon' src={props.icon} alt='card icon' />
       </div>
-      {/* <h1>Check out these projects!</h1> */}
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
-            <CardItem
-              src="images/tablet1.png"
-              text1="Volunteers"
-              icon="icons/sql.png"
-              text2="Search volunteer activity informations"
-              text3="PHP, MySQL"
-              label="Web App"
-              path="/volunteers"
-            />
-            <CardItem
-              src="images/mobile1.png"
-              text1="Walk"
-              icon="icons/reactnative.png"
-              text2="Search dog walking volunteers for the community"
-              text3="React-Native, Android Studio"
-              label="Mobile App"
-              path="/walk"
-            />
-          </ul>
-          <ul className="cards__items">
-            <CardItem
-              src="images/mobile2.png"
-              text1="GreenLife"
-              icon="icons/react.png"
-              text2="Tracks users’ daily carbon footprint"
-              text3="Storybook, React"
-              label="Mobile App"
-              path="/greenlife"
-            />
-            <CardItem
-              src="images/mobile3.png"
-              text1="Linkt"
-              icon="icons/react.png"
-              text2="A dating App"
-              text3="Storybook, React"
-              label="Mobile App"
-              path="/linkt"
-            />
-          </ul>
-        </div>
-      </div>
-    </div>
+
+      <p className='cards-desc'>{props.desc}</p>
+      <p className='cards-lang'>{props.lang}</p>
+    </Link>
   );
 }
 

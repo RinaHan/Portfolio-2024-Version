@@ -4,18 +4,15 @@ import "./ProjectDesc.css";
 import { Button } from "../Button";
 
 function ProjectDesc(props) {
-  // const test = props.exp4.length;
-  // console.log('test: ', test);
-
   return (
     <div className='p-cont'>
       {/* -----description section */}
       <section className='p-desc-cont'>
-        {/* leftside image */}
+        {/* leftside-image */}
         <div className='p-img-wrap'>
           <img className='p-img' src={props.src} alt='project' />
         </div>
-        {/* rightside details */}
+        {/* rightside-details */}
         <div className='p-details-wrap'>
           <p className='p-title'>{props.title}</p>
           <ul className='p-details'>
@@ -42,7 +39,6 @@ function ProjectDesc(props) {
                 GitHub <i className='fab fa-github' />
               </Button>
             </a>
-            {/* maybe later */}
             {/* <a>
               <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--medium'>
                 Test <i className='fas fa-play-circle' />

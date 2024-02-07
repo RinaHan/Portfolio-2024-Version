@@ -5,12 +5,12 @@ import { Button } from "../Button";
 
 function ProjectDesc(props) {
   return (
-    <div className='p-cont'>
+    <div className='p-container'>
       {/* -----description section */}
-      <section className='p-desc-cont'>
+      <section className='p-desc-section'>
         {/* leftside-image */}
         <div className='p-img-wrap'>
-          <img className='p-img' src={props.src} alt='project' />
+          <img src={props.src} alt='project' />
         </div>
         {/* rightside-details */}
         <div className='p-details-wrap'>
@@ -34,7 +34,7 @@ function ProjectDesc(props) {
 
           {/* buttons */}
           <div className='p-btn-wrap'>
-            <a href={props.githubUrl}>
+            <a href={props.githubUrl} target='_blank' rel="noreferrer" >
               <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--medium'>
                 GitHub <i className='fab fa-github' />
               </Button>
@@ -49,13 +49,13 @@ function ProjectDesc(props) {
       </section>
 
       {/* -----demo section */}
-      <section className='p-demo-cont'>
+      <section className='p-demo-section'>
         <div className='p-section-title'>Demo</div>
         <div className='p-demo-video'>{props.demo}</div>
       </section>
 
       {/* -----code section */}
-      <section className='p-code-cont'>
+      <section className='p-code-section'>
         <div className='p-section-title'>Code</div>
         <div className='p-code-img-wrap'>
           <img src={props.projectSrc1} alt='' />

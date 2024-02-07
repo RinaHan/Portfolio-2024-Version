@@ -28,11 +28,11 @@
 .menus {
   font-size: 1.1rem;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 30px;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 75vw;
   justify-content: end;
   margin-top: 20px;
   /* background-color: blue; */
@@ -41,13 +41,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 90px;
+  padding:0 7px;
   /* background-color: red; */
   /* color:red; */
 }
 .menu:hover {
   font-size: 1.17rem;
   transition: all 0.5s ease;
+  border-bottom:2px solid #fff;
   /* transition: 0.3s ease-out; */
 
   /* color: #fc5f5f; */

@@ -16,11 +16,12 @@ function Header() {
   };
   const closeMobileMenu = () => {
     setHamburgerClick(false);
+    ('html, body').animate({scrollTop:0}, 'slow');
   };
 
   const showButton = () => {
     // if (window.innerWidth <= 560) {
-      if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) {
       setButton(false);
     } else {
       setButton(true);
@@ -40,18 +41,24 @@ function Header() {
         {/* <i class='fab fa-typo3' /> */}
       </Link>
       <div className={hamburgerClick ? "menus active" : "menus"}>
-        <span className="academic">ACADEMIC PROJECTS</span>
-        <Link className='menu' to='/volunteers' onClick={closeMobileMenu}>
-          Volunteers
+        <Link className='menu' to='/disneyplus' onClick={closeMobileMenu}>
+          DisneyPlus
         </Link>
+        <Link className='menu' to='/tictactoe' onClick={closeMobileMenu}>
+          TicTacToe
+        </Link>
+        {/* <span className='academic'>ACADEMIC PROJECTS</span> */}
         <Link className='menu' to='/walk' onClick={closeMobileMenu}>
           Walk
         </Link>
-        <Link className='menu' to='/greenLife' onClick={closeMobileMenu}>
-          GreenLife
+        <Link className='menu' to='/volunteers' onClick={closeMobileMenu}>
+          Volunteers
         </Link>
         <Link className='menu' to='/linkt' onClick={closeMobileMenu}>
           Linkt
+        </Link>
+        <Link className='menu' to='/greenLife' onClick={closeMobileMenu}>
+          Green Life
         </Link>
       </div>
       {/* hamburger icon */}

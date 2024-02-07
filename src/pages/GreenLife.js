@@ -7,6 +7,7 @@ function GreenLife() {
       <ProjectDesc
         src='images/mobile2.png'
         title='GreenLife'
+        subtitle='Academic'
         sort='Mobile App'
         sortIcon={<i className='fas fa-mobile-alt' />}
         exp1='Developed an application that tracks users’ daily carbon footprint as a team of 2'

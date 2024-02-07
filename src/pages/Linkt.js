@@ -7,6 +7,7 @@ function Linkt() {
       <ProjectDesc
         src='images/mobile3.png'
         title='Linkt'
+        subtitle='Academic'
         sort='Mobile App'
         exp1='Created a dating Web App using Storybook and React as a team of 4'
         exp2='Developed User Settings, Recommended Match, Match Profile pages and assisted in Profile Set Up and Questionnaire pages'

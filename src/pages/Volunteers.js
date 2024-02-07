@@ -12,6 +12,7 @@ function Volunteers(props) {
       <ProjectDesc
         src='images/tablet1.png'
         title='Volunteers'
+        subtitle='Academic'
         sort='Web App'
         sortIcon={<i className='fas fa-desktop' />}
         exp1='Developed volunteer’s web app'

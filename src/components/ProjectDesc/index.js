@@ -17,6 +17,7 @@ function ProjectDesc(props) {
         <div className='p-details-wrap'>
           <p className='p-title'>{props.title}</p>
           <ul className='p-details'>
+          <li className='p-sub-title'>{props.subtitle}</li>
             <li id='p-bold-text'>
               {props.sort} {props.sortIcon}
             </li>

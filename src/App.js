@@ -7,6 +7,8 @@ import GreenLife from "./pages/GreenLife";
 import Linkt from "./pages/Linkt";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import TicTacToe from "./pages/TicTacToe";
+import DisneyPlus from "./pages/DisneyPlus";
 
 const Layout = () => {
   return (
@@ -23,10 +25,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='volunteers' element={<Volunteers />} />
+          <Route path='disneyplus' element={<DisneyPlus />} />
+          <Route path='tictactoe' element={<TicTacToe />} />
           <Route path='walk' element={<Walk />} />
-          <Route path='greenLife' element={<GreenLife />} />
+          <Route path='volunteers' element={<Volunteers />} />
           <Route path='Linkt' element={<Linkt />} />
+          <Route path='greenLife' element={<GreenLife />} />
         </Route>
       </Routes>
     </div>

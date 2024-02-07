@@ -4,54 +4,53 @@ import CardItem from "../../components/Cards/CardItem";
 import "./HomePage.css";
 import { Button } from "../../components/Button";
 
-
 function HomePage() {
   return (
     <Container>
-      <div className="container">
-      <div className="main">
-        <div className="mainImgCont">
-          <img className="mainImg" src="images/tablet1.png" alt="" />
-        </div>
-        <div className="mainText">
-          {/* <div className="blink">Site is updating(Mar.4)...</div> */}
-          <div className="myname">Rina Han</div>
-          <div className="projectInfo">Front-end Developer</div>
-          <div className="btnCont">
-          <a href="https://www.linkedin.com/in/rina-han/">
-            <Button
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--medium"
-            >
-              Linkedin <i className='fab fa-linkedin'/>
-            </Button>
+      <div className='h-container'>
+        <section className='h-intro-section'>
+          <div className='h-intro-bg'>test</div>
+          {/* <img src='/images/walk2.png' alt='marvel' /> */}
+
+          {/* <div className='h-section-title'>Intro</div> */}
+          <div className='h-intro-text'>Rina Han</div>
+          <div className='h-intro-sub-text'>Front-end Developer</div>
+
+          {/* <div className='mainImgCont'>
+            <img className='mainImg' src='images/tablet1.png' alt='' />
+          </div> */}
+
+          {/* <div className='mainText'> */}
+
+          <div className='p-intro-btn-wrap'>
+            <a href='https://www.linkedin.com/in/rina-han/' target='_blank' rel='noreferrer'>
+              <Button className='ttes' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                Linkedin <i className='fab fa-linkedin' />
+              </Button>
             </a>
-            
-            <a href="https://github.com/RinaHan">
-            <Button
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--medium"
-            >
-              GitHub <i className='fab fa-github'/>
-            </Button>
+
+            <a href='https://github.com/RinaHan' target='_blank' rel='noreferrer'>
+              <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                GitHub <i className='fab fa-github' />
+              </Button>
             </a>
-            <a href="mailto:rinahan4146@gmail.com?subject=Hello Rina!&body=">
-            <Button
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--medium"
+            <a
+              href='mailto:rinahan4146@gmail.com?subject=Hello Rina!&body='
+              target='_blank'
+              rel='noreferrer'
             >
-              Email <i className='fab fa-google'/>
-            </Button>
+              <Button className='btnt' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                Email <i className='fab fa-google' />
+              </Button>
             </a>
           </div>
-        </div>
-      </div>
-      <div className="aboutMe">
-        <div className="aboutTitle">About Me</div>
-        <div className="aboutCont">
+          {/* </div> */}
+        </section>
+
+        {/* about me section */}
+        <section className='h-about-section'>
+          <div className='h-section-title'>About Me</div>
+          {/* <div className="aboutCont">
           <div className="aboutImgCont">
             <img className="aboutImg" src="images/rina.jpeg" alt="" />
           </div>
@@ -69,14 +68,13 @@ function HomePage() {
               & Designer Meetup in Vancouver
             </li>
           </ul>
-        </div>
+        </div> */}
+        </section>
       </div>
-    </div>
-      <div className='cards'>
-        <div className='projectTitle'>
-          <div className='aboutTitle'>Projects</div>
-        </div>
-        {/* <h1>Check out these projects!</h1> */}
+
+      {/* project cards section */}
+      <div className='h-project-section'>
+        <div className='h-section-title'>Projects</div>
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>

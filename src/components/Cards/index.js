@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Cards.css";
-
+const handleClick = ( )=>{
+  ('html, body').animate({scrollTop:0}, 'slow');
+}
 function Cards(props) {
   return (
-    <Link className='cards-cont' to={props.path}>
+    <Link className='cards-cont' to={props.path} onClick={handleClick}>
       <figure className='cards-img-wrap' data-category={props.label}>
         <img className='cards-img' src={props.src} alt='Travel' />
       </figure>

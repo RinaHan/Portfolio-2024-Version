@@ -7,7 +7,7 @@ function TicTacToe() {
       <ProjectDesc
         src='images/tictactoe.png'
         title='Tic-Tac-Toe'
-        subtitle='2024'
+        subtitle='Side Project 2024'
         sort='Web App'
         sortIcon={<i className='fas fa-mobile-alt' />}
         exp1='Simple tic tac toe service'

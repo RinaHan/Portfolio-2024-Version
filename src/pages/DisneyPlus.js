@@ -7,7 +7,7 @@ function DisneyPlus() {
       <ProjectDesc
         src='images/disney-app.png'
         title='DisneyPlus'
-        subtitle='2024'
+        subtitle='Side Project 2024'
         sort='Web App'
         sortIcon={<i className='fas fa-mobile-alt' />}
 

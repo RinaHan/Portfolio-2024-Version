@@ -1,6 +1,10 @@
 .h-section-title {
   font-size: 30px;
-  padding: 20px 0 50px;
+  padding: 20px 0 0px;
+}
+.h-sub-title {
+  font-size: 14px;
+  padding:10px 0 20px;
 }
 .h-container {
   width: 100%;

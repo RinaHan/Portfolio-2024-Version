@@ -57,7 +57,7 @@ function LandingPage() {
       {/* projects section */}
       <div className='h-projects-section'>
         <div className='h-section-title'>Projects</div>
-        {/* <div className=''>2024</div> */}
+        <div className='h-sub-title'>2024</div>
 
         <div className='cards-wrap'>
           <Cards
@@ -102,7 +102,7 @@ function LandingPage() {
       </div>
       <div className='h-A-projects-section'>
         <div className='h-section-title'>Academic Projects</div>
-        <div className=''>2019~2021</div>
+        <div className='h-sub-title'>2019~2021</div>
 
         <div className='cards-wrap'>
           <Cards

@@ -13,13 +13,13 @@ function LandingPage() {
 
         <div className='h-intro-btn-wrap'>
           <a href='https://www.linkedin.com/in/rina-han/' target='_blank' rel='noreferrer'>
-            <Button className='ttes' buttonStyle='btn--outline' buttonSize='btn--medium'>
+            <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
               Linkedin <i className='fab fa-linkedin' />
             </Button>
           </a>
 
           <a href='https://github.com/RinaHan' target='_blank' rel='noreferrer'>
-            <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>
+            <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
               GitHub <i className='fab fa-github' />
             </Button>
           </a>
@@ -28,7 +28,7 @@ function LandingPage() {
             target='_blank'
             rel='noreferrer'
           >
-            <Button className='btnt' buttonStyle='btn--outline' buttonSize='btn--medium'>
+            <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
               Email <i className='fab fa-google' />
             </Button>
           </a>
@@ -56,27 +56,27 @@ function LandingPage() {
 
       {/* projects section */}
       <div className='h-projects-section'>
-        <div className='h-section-title'>Projects</div>
+        <div className='h-section-title'>Side Projects</div>
         <div className='h-sub-title'>2024</div>
 
         <div className='cards-wrap'>
           <Cards
-            src='images/tablet1.png'
-            title='Volunteers'
-            icon='icons/sql.jpeg'
-            desc='Search volunteer activity informations'
-            lang='PHP, MySQL'
+            src='images/disney-app.png'
+            title='Disney Plus'
+            icon='icons/react.png'
+            desc='Disney+ is the streaming home of Disney.'
+            lang='React, Node'
             label='Web App'
-            path='/volunteers'
+            path='/disneyplus'
           />
           <Cards
-            src='images/mobile1.png'
-            title='Walk'
-            icon='icons/reactnative.png'
-            desc='Search dog walking volunteers'
-            lang='React-Native, Android Studio'
+            src='images/tictactoe.png'
+            title='Tic-Tac-Toe'
+            icon='icons/react.png'
+            desc='A simple Tic-Tac-Toe game'
+            lang='React, Node'
             label='Web App'
-            path='/walk'
+            path='/tictactoe'
           />
         </div>
         {/* <div className='cards-wrap'>

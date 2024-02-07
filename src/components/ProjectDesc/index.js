@@ -8,6 +8,7 @@ function ProjectDesc(props) {
     <div className='p-container'>
       {/* -----description section */}
       <section className='p-desc-section'>
+        <div className='p-desc-cont'>
         {/* leftside-image */}
         <div className='p-img-wrap'>
           <img src={props.src} alt='project' />
@@ -45,6 +46,7 @@ function ProjectDesc(props) {
               </Button>
             </a> */}
           </div>
+        </div>
         </div>
       </section>
 

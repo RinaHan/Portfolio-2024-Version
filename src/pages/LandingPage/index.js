@@ -1,5 +1,5 @@
 import React from "react";
-import CardItem from "../../components/Cards/CardItem";
+import Cards from "../../components/Cards";
 import { Button } from "../../components/Button";
 import "./LandingPage.css";
 
@@ -42,7 +42,7 @@ function LandingPage() {
             <img src='images/rina.jpg' alt='rinaphoto' />
           </div>
           <div className='h-about-text'>
-            <div className='h-section-title'>About</div>
+            <div className='h-section-title'>About me</div>
             <p>Hello, I’m Rina</p>
             <p>
               I have a constant curiosity and an enthusiasm for learning. Believing in myself
@@ -57,47 +57,93 @@ function LandingPage() {
       {/* projects section */}
       <div className='h-projects-section'>
         <div className='h-section-title'>Projects</div>
+        {/* <div className=''>2024</div> */}
 
-        <ul className='cards-items'>
-          <CardItem
+        <div className='cards-wrap'>
+          <Cards
             src='images/tablet1.png'
-            text1='Volunteers'
-            icon='icons/sql.png'
-            text2='Search volunteer activity informations'
-            text3='PHP, MySQL'
+            title='Volunteers'
+            icon='icons/sql.jpeg'
+            desc='Search volunteer activity informations'
+            lang='PHP, MySQL'
             label='Web App'
             path='/volunteers'
           />
-          <CardItem
+          <Cards
             src='images/mobile1.png'
-            text1='Walk'
+            title='Walk'
             icon='icons/reactnative.png'
-            text2='Search dog walking volunteers for the community'
-            text3='React-Native, Android Studio'
-            label='Mobile App'
+            desc='Search dog walking volunteers'
+            lang='React-Native, Android Studio'
+            label='Web App'
             path='/walk'
           />
-        </ul>
-        <ul className='cards__items'>
-          <CardItem
+        </div>
+        {/* <div className='cards-wrap'>
+          <Cards
             src='images/mobile2.png'
-            text1='GreenLife'
+            title='GreenLife'
             icon='icons/react.png'
-            text2='Tracks users’ daily carbon footprint'
-            text3='Storybook, React'
+            desc='Tracks users’ daily carbon footprint'
+            lang='Storybook, React'
             label='Mobile App'
             path='/greenlife'
           />
-          <CardItem
+          <Cards
             src='images/mobile3.png'
-            text1='Linkt'
+            title='Linkt'
             icon='icons/react.png'
-            text2='A dating App'
-            text3='Storybook, React'
+            desc='A dating App'
+            lang='Storybook, React'
             label='Mobile App'
             path='/linkt'
           />
-        </ul>
+        </div> */}
+      </div>
+      <div className='h-A-projects-section'>
+        <div className='h-section-title'>Academic Projects</div>
+        <div className=''>2019~2021</div>
+
+        <div className='cards-wrap'>
+          <Cards
+            src='images/tablet1.png'
+            title='Volunteers'
+            icon='icons/sql.jpeg'
+            desc='Search volunteer activity informations'
+            lang='PHP, MySQL'
+            label='Web App'
+            path='/volunteers'
+          />
+          <Cards
+            src='images/mobile1.png'
+            title='Walk'
+            icon='icons/reactnative.png'
+            desc='Search dog walking volunteers'
+            lang='React-Native, Android Studio'
+            label='Mobile App'
+            path='/walk'
+          />
+        </div>
+        <div className='cards-wrap'>
+          <Cards
+            src='images/mobile2.png'
+            title='GreenLife'
+            icon='icons/react.png'
+            desc='Tracks users’ daily carbon footprint'
+            lang='Storybook, React'
+            label='Mobile App'
+            path='/greenlife'
+          />
+          <Cards
+            src='images/mobile3.png'
+            title='Linkt'
+            icon='icons/react.png'
+            desc='A dating App'
+            lang='Storybook, React'
+            label='Mobile App'
+            path='/linkt'
+          />
+        </div>
       </div>
     </div>
   );

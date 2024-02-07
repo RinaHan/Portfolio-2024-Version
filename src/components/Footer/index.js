@@ -31,6 +31,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  top:80px;
 `;
 const Items = styled.div`
   background-color: #fff;
@@ -42,6 +44,8 @@ const Items = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 0 20px;
+  box-shadow: 10px 9px 8px -2px rgba(0,0,0,0.47);
+
 `;
 const Item = styled.a`
   color: #242424;
@@ -62,4 +66,7 @@ const Icon = styled.img`
   width: 20px;
   height: auto;
   margin-left: 10px;
+  /* & :hover {
+    transform: scale(1.05);
+  } */
 `;

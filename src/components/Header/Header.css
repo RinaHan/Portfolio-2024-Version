@@ -12,6 +12,16 @@
 }
 .logo {
   font-size: 1.5rem;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #999;
+  padding: 5px 30px;
+  border-radius: 5px;
+  box-shadow: 10px 9px 8px -2px rgba(0, 0, 0, 0.47);
+}
+.logo:hover {
+  background-color: rgba(177, 177, 177, 0.217);
 }
 .menus {
   font-size: 1.1rem;
@@ -29,6 +39,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70px;
+  /* background-color: red; */
+  /* color:red; */
+}
+.menu:hover {
+  font-size: 1.17rem;
+  transition: all 0.5s ease;
+  /* transition: 0.3s ease-out; */
+
+  /* color: #fc5f5f; */
 }
 .hamburger-icon {
   position: fixed;
@@ -37,7 +57,9 @@
   cursor: pointer;
   color: #fff;
 }
-
+.academic {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .menus {
     display: flex;
@@ -61,6 +83,7 @@
   }
   .menu {
     height: 50px;
+    width: 100%;
   }
   .menu:hover {
     height: 49px;
@@ -69,8 +92,7 @@
     border-bottom: 2px solid #fff;
     transition: all 0.2s ease-out;
   }
-  .logo:hover {
-    font-weight: 600;
-    /* transition: all 0.2s ease 0s; */
+  .academic {
+    display: inline;
   }
 }

@@ -8,6 +8,7 @@ function Footer(props) {
       <Image className='h-intro-bg'></Image>
       <Items>
         <h2>Contact Me</h2>
+        {/* <p>If you are interested in my work or want to work with me, please feel free to contact me.</p> */}
         <Item href='https://www.linkedin.com/in/rina-han/' target='_blank'>
           <span>LinkedIn</span> <Icon className='footer-icon' src='icons/linkedin.png' alt='icon' />
         </Item>
@@ -26,7 +27,7 @@ export default Footer;
 
 const Image = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   position: fixed;
   top: 0;
   background-image: url("/images/sky.jpg");

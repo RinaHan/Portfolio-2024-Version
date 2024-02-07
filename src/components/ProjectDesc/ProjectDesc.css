@@ -1,0 +1,126 @@
+.p-cont {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+}
+
+/* -----description section */
+.p-desc-cont {
+  /* background-color: pink; */
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 80px 0;
+}
+.p-img-wrap {
+  flex: 1;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 23, 23);
+}
+.p-img-wrap > img {
+  width: 100%;
+  background-color: greenyellow;
+}
+
+.p-details-wrap {
+  /* background-color: orange; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* detail-1 */
+.p-title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  /* background-color: #dad; */
+}
+/* detail-2 */
+.p-details {
+  padding: 0 0 0 15px;
+  /* background-color: blanchedalmond; */
+}
+.p-details > li {
+  font-size: 16px;
+  margin-bottom: 7px;
+  /* background-color: cornflowerblue; */
+}
+#p-bold-text {
+  font-weight: 600;
+  /* color:#999; */
+}
+/* detail-3 */
+.p-btn-wrap {
+  margin: -5px 0;
+  /* background-color:pink */
+}
+/* -----demo section */
+.p-demo-cont {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: rgb(227, 226, 226);
+}
+.p-demo-video {
+  width: 80%;
+  right: 10;
+}
+video {
+  width: 100%;
+  max-height: 700px;
+}
+.p-section-title {
+  font-size: 2rem;
+  padding: 0 0 30px;
+}
+
+/* -----code section */
+.p-code-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+.p-code-img-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-code-img-wrap > img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-desc-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-title {
+    font-size: 1.5rem;
+  }
+  .p-details > li {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}

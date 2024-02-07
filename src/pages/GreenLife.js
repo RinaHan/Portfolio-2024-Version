@@ -7,13 +7,13 @@ function GreenLife() {
       <ProjectDesc
         src='images/mobile2.png'
         title='GreenLife'
-        subtitle='Academic'
+        subtitle='Academic 2019'
         sort='Mobile App'
         sortIcon={<i className='fas fa-mobile-alt' />}
         exp1='Developed an application that tracks users’ daily carbon footprint as a team of 2'
         exp2='Modified Design and developed all UI components and pages using storybook and React'
-        exp3='Collaborated on user research, personas, low and high fidelity and user testing'
-        exp4=''
+        exp3='Collaborated on user research, personas low and high fidelity'
+        exp4='User testing completed'
         tool1='React'
         toolIcon1={<i className='fab fa-react'></i>}
         tool2='Storybook'

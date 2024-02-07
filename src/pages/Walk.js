@@ -7,7 +7,7 @@ function Walk() {
       <ProjectDesc
           src='images/mobile1.png'
           title='Walk'
-          subtitle='Academic'
+          subtitle='Academic 2021'
           sort='Mobile App'
           sortIcon={<i className='fas fa-mobile-alt'></i>}
           exp1='Created a dog walking volunteer application for the community'

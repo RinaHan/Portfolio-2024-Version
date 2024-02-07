@@ -4,7 +4,7 @@
 }
 .h-sub-title {
   font-size: 14px;
-  padding: 10px 0 20px;
+  padding: 10px 0 50px;
 }
 .h-container {
   width: 100%;
@@ -97,7 +97,7 @@
   /* background-color: pink */
 }
 .cards-wrap {
-  width: 65%;
+  width: 55%;
   height: 650px;
   /* height: 100px; */
   /* background-color: rgb(182, 143, 219); */

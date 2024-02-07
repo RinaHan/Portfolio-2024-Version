@@ -1,0 +1,132 @@
+.h-section-title {
+  font-size: 30px;
+  padding: 20px 0 50px;
+}
+.h-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+}
+
+/* intro section */
+.h-intro-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+}
+.h-intro-text {
+  font-size: 56px;
+}
+.h-intro-sub-text {
+  margin: -10px 0 140px;
+}
+.h-intro-btn-wrap {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  button {
+    background-color: black;
+    border: 1px solid black;
+    &:hover {
+      background-color: rgb(239, 193, 193);
+    }
+  }
+}
+
+/* ------about section */
+.h-about-section {
+  background-color: rgb(227, 226, 226);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 130px 0;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
+  z-index:1;
+}
+.h-about-cont {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.h-about-img {
+  display: flex;
+}
+.h-about-img > img {
+  width: 80%;
+}
+.h-about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* ------projects section */
+.h-projects-section {
+  /* border-bottom: 4mm ridge rgba(173, 93, 130, 0.6); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 0;
+  background-color: white;
+}
+.cards-items {
+  width: 75%;
+  height: 100px;
+  /* background-color: rgb(182, 143, 219); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .h-section-title {
+    font-size: 20px;
+    padding: 0 0 20px;
+  }
+  .h-about-text {
+    font-size: 14px;
+  }
+  .h-intro-text {
+    font-size: 40px;
+  }
+  .h-intro-sub-text {
+    font-size: 14px;
+    margin: -10px 0 60px;
+  }
+  .h-intro-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 120px;
+      margin-top: 7px;
+    }
+  }
+  .h-about-cont {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-about-img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .cards-items {
+    flex-direction: column;
+  }
+}

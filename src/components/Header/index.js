@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 // import { Button } from '../Button/Button';
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { TiThMenu } from "react-icons/ti";
-import { IoClose } from "react-icons/io5";
-import { FaRegWindowClose } from "react-icons/fa";
 import styled from "styled-components";
 
 function Header() {
@@ -39,11 +36,11 @@ function Header() {
   return (
     <div className='nav-container'>
       <Link to='/' className='logo' onClick={closeMobileMenu}>
-        rinahan.ca
+        RinaHan
         {/* <i class='fab fa-typo3' /> */}
       </Link>
       <div className={hamburgerClick ? "menus active" : "menus"}>
-        <span>ACADEMIC PROJECTS</span>
+        <span className="academic">ACADEMIC PROJECTS</span>
         <Link className='menu' to='/volunteers' onClick={closeMobileMenu}>
           Volunteers
         </Link>

@@ -1,11 +1,10 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Project from "../components/Project";
+import ProjectDesc from "../components/ProjectDesc";
 
 function Walk() {
   return (
     <div>
-      <Project
+      <ProjectDesc
           src='images/mobile1.png'
           title='Walk'
           sort='Mobile App'

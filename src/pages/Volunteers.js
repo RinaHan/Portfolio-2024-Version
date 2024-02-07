@@ -3,14 +3,13 @@ import React from "react";
 // import { Button } from "../Button/Button";
 // import "./Project";
 // import { Link } from "react-router-dom";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import ProjectDesc from "../components/ProjectDesc";
 
 function Volunteers(props) {
   return (
     <div className='container'>
       {/* <div className='project'> */}
-      <Project
+      <ProjectDesc
         src='images/tablet1.png'
         title='Volunteers'
         sort='Web App'

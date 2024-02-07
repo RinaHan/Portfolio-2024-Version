@@ -1,11 +1,10 @@
 import React from "react";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import ProjectDesc from "../components/ProjectDesc";
 
 function GreenLife() {
   return (
     <div>
-      <Project
+      <ProjectDesc
         src='images/mobile2.png'
         title='GreenLife'
         sort='Mobile App'

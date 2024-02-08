@@ -22,7 +22,7 @@ function Volunteers(props) {
         tool1='PHP'
         toolIcon1={<i className='fab fa-php'></i>}
         tool2='MySQL'
-        toolIcon2={<i className='fab fa-'></i>}
+        toolIcon2={<i className='far fa-database'></i>}
         githubUrl='https://github.com/RinaHan/Volunteer-Web-App-PHP-MySQL'
         demo={<video src='/videos/volunteers.mp4' autoPlay loop muted />}
         projectSrc1='images/volun1.png'

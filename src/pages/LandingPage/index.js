@@ -42,7 +42,10 @@ function LandingPage() {
             <img src='images/rina.jpg' alt='rinaphoto' />
           </div>
           <div className='h-about-text'>
-            <div className='h-section-title'>About me</div>
+            <div className='h-section-title'>
+              <i class='fad fa-ornament'></i>
+              {` `}About me
+            </div>
             <p>Hello, I’m Rina</p>
             <p>
               I have a constant curiosity and an enthusiasm for learning. Believing in myself
@@ -56,7 +59,10 @@ function LandingPage() {
 
       {/* projects section */}
       <div className='h-projects-section'>
-        <div className='h-section-title'>Side Projects</div>
+        <div className='h-section-title'>
+          <i class='fad fa-dice' />
+          {` `}Side Projects
+        </div>
         <div className='h-sub-title'>2024</div>
 
         <div className='cards-wrap'>
@@ -101,7 +107,10 @@ function LandingPage() {
         </div> */}
       </div>
       <div className='h-A-projects-section'>
-        <div className='h-section-title'>Academic Projects</div>
+        <div className='h-section-title'>
+          <i class='fad fa-fire' />
+          {` Academic Projects`}
+        </div>
         <div className='h-sub-title'>2019~2021</div>
 
         <div className='cards-wrap'>

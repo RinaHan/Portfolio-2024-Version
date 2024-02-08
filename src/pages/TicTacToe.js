@@ -9,7 +9,7 @@ function TicTacToe() {
         title='Tic-Tac-Toe'
         subtitle='Side Project 2024'
         sort='Web App'
-        sortIcon={<i className='fas fa-mobile-alt' />}
+        sortIcon={<i className='fas fa-desktop' />}
         exp1='Simple tic tac toe service'
         exp2='Functional component using React Hooks'
         exp3='Single page application with the basic structure and functions of React'

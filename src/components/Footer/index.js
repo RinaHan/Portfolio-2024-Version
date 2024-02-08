@@ -5,9 +5,16 @@ import styled from "styled-components";
 function Footer(props) {
   return (
     <Container>
-      <Image className='h-intro-bg'></Image>
+      <Image></Image>
       <Items>
-        <h2>Contact Me</h2>
+        <h2>
+          Contact Me
+          <p>
+            If you are interested in my work or want to work with me, <br />
+            please feel free to contact me <i class='fas fa-comment-smile' />
+          </p>
+        </h2>
+
         {/* <p>If you are interested in my work or want to work with me, please feel free to contact me.</p> */}
         <Item href='https://www.linkedin.com/in/rina-han/' target='_blank'>
           <span>LinkedIn</span> <Icon className='footer-icon' src='icons/linkedin.png' alt='icon' />
@@ -25,14 +32,6 @@ function Footer(props) {
 
 export default Footer;
 
-const Image = styled.div`
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  background-image: url("/images/sky.jpg");
-  z-index: -1;
-`;
 const Container = styled.div`
   /* background-color: rgb(243, 210, 215); */
   left: 0;
@@ -49,7 +48,16 @@ const Container = styled.div`
     font-size: 12px;
   }
 `;
+const Image = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-image: url("/images/sky.jpg");
+  z-index: -1;
+`;
 const Items = styled.div`
+  /* border: 1px solid powderblue; */
   background-color: #fff;
   width: 50%;
   height: 50%;
@@ -58,8 +66,16 @@ const Items = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 20px;
+  padding: 50px;
   box-shadow: 10px 9px 8px -2px rgba(0, 0, 0, 0.47);
+  h2 {
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    /* background: powderblue; */
+    /* font-family: 'Helvetica Neue'; */
+  }
   @media screen and (max-width: 768px) {
     h2 {
       font-size: 20px;

@@ -54,13 +54,18 @@ function ProjectDesc(props) {
 
       {/* -----demo section */}
       <section className='p-demo-section'>
-        <div className='p-section-title'>Demo</div>
+        <div className='p-section-title'>
+          <i class='fad fa-video' />
+          {` `} Demo
+        </div>
         <div className='p-demo-video'>{props.demo}</div>
       </section>
 
       {/* -----code section */}
       <section className='p-code-section'>
-        <div className='p-section-title'>Code</div>
+        <div className='p-section-title'>
+        <i class='fad fa-code' />
+          {` `}Code</div>
         <div className='p-code-img-wrap'>
           <img src={props.projectSrc1} alt='' />
           <img src={props.projectSrc2} alt='' />

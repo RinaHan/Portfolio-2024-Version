@@ -16,7 +16,7 @@ function Header() {
   };
   const closeMobileMenu = () => {
     setHamburgerClick(false);
-    ('html, body').animate({scrollTop:0}, 'slow');
+    "html, body".animate({ scrollTop: 0 }, "slow");
   };
 
   const showButton = () => {
@@ -38,7 +38,6 @@ function Header() {
     <div className='nav-container'>
       <Link to='/' className='logo' onClick={closeMobileMenu}>
         RinaHan
-        {/* <i class='fab fa-typo3' /> */}
       </Link>
       <div className={hamburgerClick ? "menus active" : "menus"}>
         <Link className='menu' to='/disneyplus' onClick={closeMobileMenu}>

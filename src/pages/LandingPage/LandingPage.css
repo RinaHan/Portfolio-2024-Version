@@ -1,6 +1,11 @@
 .h-section-title {
   font-size: 30px;
   padding: 20px 0 0px;
+  /* display:flex; */
+  /* align-items: center; */
+  i{
+    font-size: 1.6rem;
+  }
 }
 .h-sub-title {
   font-size: 14px;

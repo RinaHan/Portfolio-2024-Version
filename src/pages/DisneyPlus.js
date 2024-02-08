@@ -9,7 +9,7 @@ function DisneyPlus() {
         title='DisneyPlus'
         subtitle='Side Project 2024'
         sort='Web App'
-        sortIcon={<i className='fas fa-mobile-alt' />}
+        sortIcon={<i className='fas fa-desktop' />}
 
         exp1='Single page application using React Router Dom and API provided by The Movie DB'
         exp2='Close modal using custom hook'

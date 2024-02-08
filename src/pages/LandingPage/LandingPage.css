@@ -102,9 +102,9 @@
   /* background-color: pink */
 }
 .cards-wrap {
-  width: 55%;
+  width: 60%;
+  max-width:800px;
   height: 650px;
-  /* height: 100px; */
   /* background-color: rgb(182, 143, 219); */
   display: flex;
   flex-direction: row;
